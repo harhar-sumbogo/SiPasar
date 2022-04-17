@@ -3,7 +3,7 @@
 }
 
 .container-api {
-    padding: 0 7rem;
+    padding: 0 10vw;
 }
 
 .item-api {
@@ -18,13 +18,26 @@
 #sidebar-wrapper {
     position: fixed;
     top: 0;
+    max-width: 80vw;
+    width: 20rem;
 }
 
 #page-content-wrapper {
-    margin-left: 20rem;
+    margin-left: 0;
     transition: margin 0.25s ease-out;
+    min-width: 0 !important;
 }
 
 .sb-sidenav-toggled #page-content-wrapper {
-    margin-left: 0;
+    margin-left: 20rem;
+}
+
+@media (min-width: 768px) {
+    #page-content-wrapper {
+        margin-left: 20rem;
+    }
+
+    .sb-sidenav-toggled #page-content-wrapper {
+        margin-left: 0;
+    }
 }
