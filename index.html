@@ -18,13 +18,17 @@
         <div class="border-end bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Endpoint</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">List LonLat
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="#endpoint">Endpoint</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#list-lonlat">List
+                    LonLat
                     Pasar</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Deskripsi
+                <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                    href="#deskripsi-pasar">Deskripsi
                     Pasar</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Detail Pasar</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">List Kios
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#detail-pasar">Detail
+                    Pasar</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#list-kios">List Kios
                     Pasar</a>
             </div>
         </div>
@@ -40,12 +44,12 @@
             <!-- Page content-->
             <div class="container-fluid container-api">
                 <div class="item-api">
-                    <h3>Endpoint</h3>
+                    <h3 id="endpoint">Endpoint</h3>
                     <a href="#">http://sipasar-api.srikandi-ftiukdw.info/api/public</a>
                 </div>
 
                 <div class="item-api">
-                    <h3>List Longitude Latitude Pasar</h3>
+                    <h3 id="list-lonlat">List Longitude Latitude Pasar</h3>
                     <p>
                         Mengambil longitude dan latitude dari pasar. Digunakan agar dapat melakukan pinpoint pada peta.
                     </p>
@@ -55,6 +59,138 @@
                             <ul>
                                 <li>
                                     /pasar/getlonlan
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Method
+                            <ul>
+                                <li>
+                                    GET
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Response Example
+                            <pre class="api-response">
+                            </pre>
+                        </li>
+                        <li>
+                            Response Description
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="response-description">
+
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-api">
+                    <h3 id="deskripsi-pasar">Deskripsi Pasar</h3>
+                    <p>
+                        Mengambil data utama pasar, {idpasar} diisi dengan ID pasar yang ingin diambil
+                    </p>
+                    <ul>
+                        <li>
+                            URL
+                            <ul>
+                                <li>
+                                    /pasar/getdesc/{idpasar}
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Method
+                            <ul>
+                                <li>
+                                    GET
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Response Example
+                            <pre class="api-response">
+                                            </pre>
+                        </li>
+                        <li>
+                            Response Description
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="response-description">
+
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-api">
+                    <h3 id="detail-pasar">Detail Pasar</h3>
+                    <p>
+                        Mengambil data detail pasar, {idpasar} diisi dengan ID pasar yang ingin diambil
+                    </p>
+                    <ul>
+                        <li>
+                            URL
+                            <ul>
+                                <li>
+                                    /pasar/detail/getone/{idpasar}
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Method
+                            <ul>
+                                <li>
+                                    GET
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Response Example
+                            <pre class="api-response">
+                                                            </pre>
+                        </li>
+                        <li>
+                            Response Description
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="response-description">
+
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-api">
+                    <h3 id="list-kios">List Kios Pasar</h3>
+                    <p>
+                        Mengambil data detail semua kios pasar
+                    </p>
+                    <ul>
+                        <li>
+                            URL
+                            <ul>
+                                <li>
+                                    /pasar/getpasarkios
                                 </li>
                             </ul>
                         </li>
