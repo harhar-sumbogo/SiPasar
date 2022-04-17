@@ -27,7 +27,6 @@
 #page-content-wrapper {
     margin-left: 0;
     transition: margin 0.25s ease-out;
-    min-width: 0 !important;
 }
 
 .sb-sidenav-toggled #page-content-wrapper {
