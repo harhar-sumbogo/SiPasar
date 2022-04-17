@@ -12243,7 +12243,7 @@ fieldset:disabled .btn {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
+  margin-left: -20rem;
   transition: margin 0.25s ease-out;
 }
 

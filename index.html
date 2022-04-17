@@ -30,35 +30,74 @@
         </div>
         <!-- Page content wrapper-->
         <div id="page-content-wrapper">
-            <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
-                </div>
-            </nav>
-            <!-- Page content-->
             <div class="container-fluid">
-                <h1 class="mt-4">Simple Sidebar</h1>
-                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
-                    non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                <p>
-                    Make sure to keep all page content within the
-                    <code>#page-content-wrapper</code>
-                    . The top navbar is optional, and just for demonstration. Just create an element with the
-                    <code>#sidebarToggle</code>
-                    ID which will toggle the menu when clicked.
-                </p>
+                <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
             </div>
+            <!-- Page content-->
+            <div class="container-fluid container-api">
+                <div class="item-api">
+                    <h3>Endpoint</h3>
+                    <a href="#">http://sipasar-api.srikandi-ftiukdw.info/api/public</a>
+                </div>
+
+                <div class="item-api">
+                    <h3>List Longitude Latitude Pasar</h3>
+                    <p>
+                        Mengambil longitude dan latitude dari pasar. Digunakan agar dapat melakukan pinpoint pada peta.
+                    </p>
+                    <ul>
+                        <li>
+                            URL
+                            <ul>
+                                <li>
+                                    /pasar/getlonlan
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Method
+                            <ul>
+                                <li>
+                                    GET
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Response Example
+                            <pre class="api-response">
+                            </pre>
+                        </li>
+                        <li>
+                            Response Description
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Key</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="response-description">
+
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
