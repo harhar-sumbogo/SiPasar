@@ -15,6 +15,8 @@
     background-color: #f8f8f8;
 }
 
+
+/* mengatur sidebar & content-wrapper ketika button di klik */
 #sidebar-wrapper {
     position: fixed;
     top: 0;
@@ -40,4 +42,10 @@
     .sb-sidenav-toggled #page-content-wrapper {
         margin-left: 0;
     }
+}
+
+/* mengatur posisi button */
+#sidebarToggle {
+    position: fixed;
+    bottom: 0;
 }
