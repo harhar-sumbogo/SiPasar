@@ -12495,3 +12495,12 @@ header.masthead .h1 {
   padding: 0;
   border-radius: 100%;
 }
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.img-brand {
+  height: 2.75rem;
+}
